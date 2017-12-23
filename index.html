@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)https://csdoker.com/ -->
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="description" content="曼巴童鞋">
+	<meta name="keywords" content="曼巴童鞋">
+	<title>曼巴童鞋 - 主页</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" media="screen" href="style.css">
+	<script src="index.js"></script>
+</head>
+<body>
+	<div id="imgs">
+	  <!-- <div id="bg1" class="bg"></div> -->
+	  <div id="bg2" class="bg"></div>
+	  <!-- <div id="bg3" class="bg"></div> -->
+	  <div id="bg4" class="bg"></div>
+	  <div id="bg5" class="bg"></div>
+	  <!-- <div id="bg6" class="bg"></div> -->
+	  <!-- <div id="bg7" class="bg"></div> -->
+	  <!-- <div id="bg8" class="bg"></div> -->
+	  <!-- <div id="bg9" class="bg"></div> -->
+	  <div id="bg10" class="bg"></div>
+	  <!-- <div id="bg11" class="bg"></div> -->
+	  <!-- <div id="bg12" class="bg"></div> -->
+	  <div id="bg13" class="bg"></div>
+	  <!-- <div id="bg14" class="bg"></div> -->
+	  <!-- <div id="bg15" class="bg"></div> -->
+	  <!-- <div id="bg16" class="bg"></div> -->
+	  <div id="bg17" class="bg fadein"></div>
+	  <!-- <div id="bg18" class="bg fadein"></div> -->
+	</div>
+
+	<div class="overlay"></div>
+	<div id="particles-js"><canvas class="particles-js-canvas-el" width="1920" height="950" style="width: 100%; height: 100%;"></canvas></div>
+	<div class="content">
+		<div class="avatar">
+			<img src="avatar.png" alt="avatar">
+		</div>	
+		<p class="info">千里之行,始于足下 &nbsp;不忘初心,方能始终</p>
+		<p class="link">
+			<a href="http://blog.kesixin.xin/" target="_blank">博客</a>
+		</p>
+		<p class="link">
+			<a href="https://github.com/kesixin/kesixin.github.io" target="_blank">GITHUB</a>
+		</p>
+		<p class="link">
+			<a href="http://blog.csdn.net/kesixin" target="_blank">CSDN</a>
+		</p>
+		<p class="link">
+			<a href="http://www.jianshu.com/u/ed95b64d8305" target="_blank">简书</a>
+		</p>
+	</div>
+	<div class="footer">
+		<span style="font-size:16px;">© </span>2017 ICP证：<a class="record" href="http://www.miitbeian.gov.cn/" target="_block">粤ICP备17112246号</a> <a href="https://pages.coding.net/" class="record">「Hosted by Coding Pages」</a>
+		<script type="text/javascript">
+                        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                        document.write(unescape("%3Cspan id='cnzz_stat_icon_1264398044'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1264398044%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+					</script>
+	</div>
+
+
+<script type="text/javascript">
+
+	
+	// 替换class达到淡入淡出的效果
+	function fadeIn(e) {
+	  e.className = "bg fadein"
+	};
+
+	function fadeOut(e) {
+	  e.className = "bg"
+	};
+	//申明图片数组中当前的轮播图片
+	cur_img = document.getElementById("imgs").children.length - 1;
+	//图片轮播函数
+	function turnImgs(imgs) {
+		var imgs = document.getElementById("imgs").children;
+		if (cur_img == 0) {
+		  fadeOut(imgs[cur_img]);
+		  cur_img = imgs.length - 1;
+		  fadeIn(imgs[cur_img]);
+		} else {
+		  fadeOut(imgs[cur_img]);
+		  fadeIn(imgs[cur_img - 1]);
+		  cur_img--;
+		}
+	}
+	//设置轮播间隔
+	setInterval(turnImgs, 6000);
+
+
+	/* 设置时间 */
+	// function show_date_time () { 
+	// 	window.setTimeout("show_date_time()", 1000); 
+	// 	timeold = ((new Date()).getTime()-(new Date("08/26/2016 00:00:00")).getTime());
+
+	// 	sectimeold = timeold/1000;
+	// 	secondsold = Math.floor(sectimeold); 
+	// 	msPerDay = 24*60*60*1000;
+
+	// 	e_daysold = timeold/msPerDay;
+	// 	daysold=Math.floor(e_daysold); 
+
+	// 	e_hrsold=(e_daysold-daysold)*24; 
+	// 	hrsold=Math.floor(e_hrsold); 
+
+	// 	e_minsold=(e_hrsold-hrsold)*60; 
+	// 	minsold=Math.floor((e_hrsold-hrsold)*60); 
+		
+	// 	seconds=Math.floor((e_minsold-minsold)*60); 
+	// 	aa.innerHTML=""+daysold+"D "+hrsold+"H "+minsold+"M "+seconds+"S "; 
+	// }
+	// show_date_time();
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src="particles.js"></script>
+<script src="app.js"></script>
+
+</body></html>

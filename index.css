@@ -1,0 +1,275 @@
+/* 样式初始化 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+/*body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }*/
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+
+/* 页面样式 */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", 
+  "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  
+  position: relative;
+  height: 100vh;
+
+  /*background: url(../img/background/1.jpg) no-repeat center center;*/
+  /*background-size: cover;*/
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 2s linear;
+  -moz-transition: opacity 2s linear;
+  -o-transition: opacity 2s linear;
+  transition: opacity 2s linear;
+  opacity:0;
+}
+
+/*#bg1 {
+  background: url(https://i.loli.net/2017/07/16/596b0d855b400.jpg) no-repeat center center;
+  background-size: cover;
+}*/
+
+#bg2 {
+  background: url(timg2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/*#bg3 {
+  background: url(https://i.loli.net/2017/07/16/596b0d887e611.jpg) no-repeat center center;
+  background-size: cover;
+}*/
+
+#bg4 {
+  background: url(3-140R5145414.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#bg5 {
+  background: url(12.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/*#bg6 {
+  background: url(https://i.loli.net/2017/07/16/596b0d8a4b4a2.jpg) no-repeat center center;
+  background-size: cover;
+}*/
+
+/*#bg7 {
+  background: url(https://i.loli.net/2017/07/16/596b0d8adcb3b.jpg) no-repeat center center;
+  background-size: cover;
+}*/
+
+/*#bg8 {
+  background: url(https://i.loli.net/2017/07/16/596b0d8b03ffc.jpg) no-repeat center center;
+  background-size: cover;
+}*/
+
+/*#bg9 {
+  background: url(https://i.loli.net/2017/07/16/596b0d8b7b801.jpg) no-repeat center center;
+  background-size: cover;
+}*/
+
+#bg10 {
+  background: url(5-160331155H6.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/*#bg11 {
+  background: url(https://i.loli.net/2017/07/16/596b11a214536.jpg) no-repeat center center;
+  background-size: cover;
+}*/
+
+/*#bg12 {
+  background: url(https://i.loli.net/2017/07/16/596b11a277608.jpg) no-repeat center center;
+  background-size: cover;
+}*/
+
+#bg13 {
+  background: url(timg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/*#bg14 {
+  background: url(https://i.loli.net/2017/07/16/596b11a28ad05.jpg) no-repeat center center;
+  background-size: cover;
+}*/
+
+/*#bg15 {
+  background: url(https://i.loli.net/2017/07/16/596b11a2990dc.jpg) no-repeat center center;
+  background-size: cover;
+}*/
+
+/*#bg16 {
+  background: url(https://i.loli.net/2017/07/16/596b11a29c101.jpg) no-repeat center center;
+  background-size: cover;
+}*/
+
+#bg17 {
+  background: url(20141201015510820.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/*#bg18 {
+  background: url(https://i.loli.net/2017/07/16/596b11a2b7c1f.jpg) no-repeat center center;
+  background-size: cover;
+}*/
+
+.fadein {
+  opacity: 100;
+  filter: alpha(opacity=100);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent !important;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  background-color: rgba(224,224,224,0.4);
+  padding: 30px;
+}
+
+.avatar {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.avatar:hover {
+
+}
+
+.avatar img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.info {
+  margin-top: 20px;
+  font-size: 15px;
+  font-style: italic;
+  color: #fff;
+}
+
+.link {
+  margin-top: 30px;
+}
+
+.link a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.link a:hover {
+   transition: box-shadow .15s ease-in;
+   box-shadow: 12px 12px 12px rgba(0,0,0,0.16);
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%,0);
+  -webkit-transform: translateX(-50%) translateY(0);
+  -moz-transform: translateX(-50%) translateY(0);
+  -ms-transform: translateX(-50%) translateY(0);
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+}
+
+.footer .time {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.footer .record {
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer .copyright{
+  font-size: 16px;
+}
+
+@media screen and (max-width:960px) and (min-width:480px) {
+  .content {
+    padding: 20px;
+  }
+  .info {
+    margin-top: 10px;
+  }
+  .link {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width:480px) and (min-width:320px) {
+  .content {
+    padding: 10px;
+  }
+  .info {
+    margin-top: 5px;
+  }
+  .link {
+    margin-top: 15px;
+  }
+}
